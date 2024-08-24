@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    border: solid;
+    width: 100%;
+    background-color: aqua;
+}
+
+p{
+    background-color: antiquewhite;
+
+}
+
+
+h2 {
+    color: blanchedalmond;
+    background-color: rgb(238, 64, 64);
+}

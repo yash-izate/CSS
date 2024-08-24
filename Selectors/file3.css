@@ -1,0 +1,17 @@
+/* Study Inheritance property */
+
+div {
+    background-color: hwb(60 52% 5%);
+}
+
+form {
+    background-color: #9ff68c;
+}
+
+button {
+    background-color: inherit;
+}
+
+button:hover {
+    background-color: red;
+}

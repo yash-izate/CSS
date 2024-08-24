@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    /* border: solid; */
+    width: 100%;
+    text-decoration: wavy red underline;
+    background-color:rgb(27, 203, 226) ;
+}
+
+h2 {
+    font-weight: 550;
+    text-decoration: underline;
+    background-color: red;
+}
+
+p {
+    text-align: justify;
+    font-weight: normal;
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

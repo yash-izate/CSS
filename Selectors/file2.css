@@ -1,0 +1,99 @@
+* {
+    font-family: "Courier";
+    /* background-color: antiquewhite !important;  */
+}
+
+
+h1, h3 {
+    color: #b92b27;
+}
+
+#login {
+
+    background-color: white;
+}
+
+#signup {
+    background-color: #f3c8c7;
+} 
+
+.a {
+    background-color: lightgreen;
+}
+
+.b {
+    background-color: skyblue;
+}
+
+/* Descendant Selectors on a class */
+.post a {
+    color: purple;
+    background-color: rgb(242, 242, 136);
+}
+
+nav ul li a {
+    color: hotpink;
+}
+
+/* Adjacent sibling Combinators */
+p + h3 {
+    text-decoration: underline;
+}
+
+upvote + button {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+/* Child Combinator */
+
+div >input {
+    background-color: rgb(246, 211, 200);
+}
+
+/* Attribute selector */
+
+input[type="text"] {
+    color: green;
+}
+
+input[type="password"] {
+    color: red;
+}
+
+input[type] {
+    background-color: ghostwhite;
+}
+
+/* practice */
+
+div[id="myid"] p {
+    color: rgb(161, 50, 241);
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: none;
+}
+
+button:active {
+    background-color: rgb(232, 43, 46);
+}
+
+p:active {
+    font-weight: bold;
+    color: rgb(135, 6, 255);
+}
+
+input[type="radio"]:checked + label{
+    color: rgb(8, 204, 31);
+    font-weight: bold;
+
+}
+
+div:nth-of-type(2n-1) {
+    background-color: blanchedalmond;
+}

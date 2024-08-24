@@ -1,0 +1,22 @@
+div {
+    height: 200px;
+    width: 500px;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    background-color: lightpink;
+    border-left-color: blue;
+    border-left-style: solid;
+    border-bottom-color: black;
+    border-bottom-style: dashed ;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+h1 {
+    border-style: dashed;
+    border-width: 5px;
+    border-color: purple;
+    background-color: greenyellow;
+    text-align: center;
+}

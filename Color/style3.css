@@ -1,0 +1,19 @@
+/* We can give colours by 3 types. 
+   1. Name of colour
+   2. rgb value between 0 - 255
+   3. hexadecimal code #24-6f-e6 */
+
+h2 {
+    color: orange;
+}
+
+p {
+    color:rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+
+button {
+    color: rgb(100, 230, 50);
+    background-color: blue;
+}
