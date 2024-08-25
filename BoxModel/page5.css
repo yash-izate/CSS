@@ -1,0 +1,23 @@
+#container {
+    height: 300px;
+    width: 80%;
+    background-color: rgba(164, 245, 245, 0.971);
+    margin: 10px auto;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}

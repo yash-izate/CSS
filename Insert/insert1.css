@@ -1,0 +1,10 @@
+div {
+
+    height: 500px;
+    width: 500px;
+    margin: 10px auto;
+    background-color: rgb(237, 3, 42);
+    border: 2px solid black;
+    background-image: url(https://th.bing.com/th/id/OIP.JbGzqzwzJuZqgsupHbNNiwHaEo?w=261&h=185&c=7&r=0&o=5&pid=1.7);
+    background-size: contain ;
+}

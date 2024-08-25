@@ -1,0 +1,27 @@
+#a {
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    transition-duration: 1s;
+    transition-delay: 6ms;
+}
+
+#a:hover {
+    background-color: rgb(17, 167, 242);
+    border-radius: 50%;
+    border: 5px black dotted;
+}
+
+#b {
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: margin-top 1s ease-in 0.2s;
+}
+
+#b:hover {
+    margin-top: 400px;
+    background-color: red;
+}
