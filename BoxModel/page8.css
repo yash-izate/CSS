@@ -1,0 +1,23 @@
+.container {
+    height: 300px;
+    width: 600px;
+    background-color: rgb(143, 253, 253);
+    border: 2px solid black;
+    margin: 10px auto;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    /* grid-template-columns: 100px 100px 100px 100px; */
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.item {
+    height: 50px;
+    width: 100px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: solid;
+}

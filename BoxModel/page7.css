@@ -6,7 +6,7 @@
     border: 2px solid rgb(0, 0, 0);
     display: flex;
     /* flex-direction: row; */
-    flex-direction: column;
+    flex-direction: column ;
     justify-content: flex-start;
     /* flex-wrap: wrap; */
     /* align-items: baseline; */
