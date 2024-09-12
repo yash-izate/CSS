@@ -1,0 +1,16 @@
+#box1 {
+    height: 470px;
+    width: 460px;
+    background-color: green;
+    font-size: 10px;
+    background-image: url(female_image.png);
+}
+
+#box2 {
+    height: 50px;
+    width: 30%;
+    background-color: yellow;
+    margin-left: 10%;
+    font-size: 2em;
+    width: 5rem;
+}
