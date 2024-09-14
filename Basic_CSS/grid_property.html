@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        #container {
+            height: 600px;
+            width: 600px;
+            background-color: lavender;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            border: 3px solid black;
+            display: grid;
+            grid-template-columns: 80px 100px;
+            grid-template-rows: 50px 100px;
+
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            border: 3px solid black;
+        }
+
+        #box1 {
+            background-color: aqua;
+        }
+
+        #box2 {
+            background-color: violet;
+        }
+
+        #box3 {
+            background-color: yellow;
+        }
+
+        #box4 {
+            background-color: tomato;
+        }
+
+        #box5 {
+            background-color: limegreen;
+        }
+
+        #box6 {
+            background-color: chocolate;
+
+        }
+
+        #box7 {
+            background-color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">Grid Container</h1>
+
+    <div id="container">
+
+        <div class="box" id="box1">Flex Item 1 </div>
+        <div class="box" id="box2">Flex Item 2 </div>
+        <div class="box" id="box3">Flex Item 3 </div>
+        <div class="box" id="box4">Flex Item 4 </div>
+        <div class="box" id="box5">Flex Item 5 </div>
+        <div class="box" id="box6">Flex Item 6 </div>
+        <div class="box" id="box7">Flex Item 7 </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

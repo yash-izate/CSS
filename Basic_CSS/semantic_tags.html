@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Semantic Tags</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(51, 219, 219, 0.976);
+            height: 30px;
+        }
+
+        nav {
+            padding: 5px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 0 0 55px;
+            padding: 5px;
+        }
+
+        #second {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 161, 47);
+            border-radius: 50%;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: violet;
+            margin: 5px;
+            display: inline-block;
+
+        }
+
+        #container {
+            border: 2px solid black;
+            margin: 10px;
+        }
+
+        #box4 {
+            position: fixed;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 1px;
+            background-color: rgb(238, 190, 136);
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/server">Home</a>
+            <a href="/server">Products</a>
+            <a href="/server">Contact Us</a>
+            <a href="/server">Help</a>
+            <a href="/server">Menu</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="second"></div>
+        <div id="container">
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+        </div>
+
+        <div class="box" id="box4">Box 4</div>
+
+    </main>
+
+    <footer>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae doloribus quos atque porro. Suscipit
+            perspiciatis quod at dolor? Error necessitatibus hic nulla odit soluta eligendi labore. Fugit dolorum
+            mollitia laboriosam.
+            Voluptatum, repellat et a dolor quam eum? Consequatur esse magnam dolore praesentium nesciunt reprehenderit
+            dignissimos tempora ipsam vero repellendus voluptatibus nisi ut ex soluta iste, deserunt cumque consectetur
+            doloribus dolorum?
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+
+    <style>
+        #icon {
+            height: 130px;
+            width: 200px;
+            background-image: url(/Data/myntra_icon.png);
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-color: rgb(255, 171, 254);
+            border-radius: 50% ;
+            margin: 50px;
+            display:inline-block;
+            background-position: center;
+
+        }
+
+        #male {
+            height: 200px;
+            width: 200px;
+            background-color: antiquewhite;
+            background-image: url(/Data/male_image.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 50px;
+            display: inline-block;
+        }
+
+        #female {
+            height: 200px;
+            width: 200px;
+            background-color: hotpink;
+            background-image: url(/Data/female_image.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 50px;
+        }
+
+        #dog {
+            height: 250px;
+            width: 400px;
+            background-color: yellowgreen;
+            background-image: url(/Data/dog.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: inline-block;
+            border-radius: 25px;
+            margin: 50px;
+            background-position: center;
+        }
+
+
+        /* by using background shorthand - color url repeat position */
+        
+        #cat {
+            height: 325px;
+            width: 500px;
+            /* background-color: hotpink; */
+            /* background-image: url(/Data/cat.jpg); */
+            /* background-repeat: no-repeat; */
+            /* background-position: center; */
+            background: hotpink url(/Data/cat.jpg) no-repeat center;
+            background-size: cover;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 50px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+
+    <a href="https://www.myntra.com"><div id="icon"></div></a>
+    <div id="male"></div>
+    <div id="female"></div>
+    <div id="dog"></div>
+    <div id="cat"></div>
+    
+</body>
+</html>
