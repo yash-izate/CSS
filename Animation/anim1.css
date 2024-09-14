@@ -1,0 +1,79 @@
+.box {
+    height: auto;
+    width: auto;
+    border: 5px solid;
+    text-align: center;
+    padding: 5%;
+    background-color: rgb(218, 255, 10);
+    animation-name: fontAnimate, colorAnimate, widthAnimate, borderAnimate;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fontAnimate {
+    from {
+        font-size: 10px;
+    }
+
+    to {
+        font-size: 50px;
+    }
+}
+
+@keyframes colorAnimate {
+    0% {
+        background-color: red;
+    }
+
+    15% {
+        background-color: orange;
+    }
+
+    30% {
+        background-color: yellow;
+    }
+
+    45% {
+     
+        background-color: green;
+    }
+
+    60% {
+      
+        background-color: blue;
+    }
+    
+    75% {
+      
+        background-color: indigo;
+    }
+
+    100% {
+        background-color: violet;
+    }
+}
+
+@keyframes widthAnimate {
+    from {
+        width: 100px;
+        height: 50px;
+    }
+    
+    to {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@keyframes borderAnimate {
+    from {
+        border-radius: 0%;
+    }
+
+    to {
+        border-radius: 50%;
+    }
+}
