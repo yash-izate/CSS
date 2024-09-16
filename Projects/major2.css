@@ -1,118 +1,149 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 .main_box {
-  background: url(/Images/camera.png);
+  background: url('/Images/camera.png');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
 }
 
 .btn_one {
+  position: absolute;
+  top: 20px;
+  left: 20px; /* Fixing the position */
   color: white;
   font-size: 25px;
   font-weight: 700;
-  position: absolute;
-  left: 16px;
-  line-height: 60px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .sidebar_menu {
   position: fixed;
   height: 100vh;
   width: 300px;
-  background-color: rgba(255,255, 255, 0.1);
-  box-shadow: 0 0 4px rgba(255,255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
   left: -300px;
-  transition: all 1s linear ease-in;
-
+  transition: all 0.5s ease-in-out;
 }
 
 .sidebar_menu .logo {
-  position: absolute;
+  position: relative;
   width: 100%;
-  line-height: 60px;
-  box-shadow: 0 2px 4px rgba(255,255, 255, 0.5);
   height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
   text-transform: capitalize;
+  color: white;
   letter-spacing: 4px;
   font-weight: 700;
-  text-align: center;
 }
 
 .sidebar_menu .logo a {
-  position: absolute;
-  left: 50px;
   text-decoration: none;
   color: white;
-  font-size: 21px;
-  font-weight: 500;
 }
 
-.sidebar_menu .btn_two i {
-  color: gray;
-  font-size: 25px;
-  line-height: 60px;
+.sidebar_menu .btn_two {
   position: absolute;
-  left: 275px;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
-  opacity: 0;
+  z-index: 2;
+}
 
+/* #web_name {
+  position: relative;
+  margin-left: 13px ;
+  font-size: .8em;
+  letter-spacing: 6px;
+  box-sizing: content-box;
+
+} */
+
+#web_name {
+  margin-left: 15px; 
+  font-size: .9em; 
+  letter-spacing: 3px; 
+  color: white; 
+  text-transform: uppercase;
+  vertical-align: middle; 
+  font-weight: 500;
+  display: inline-block;
+  transition: opacity 0.3s ease-in-out; 
+}
+
+/* Optional hover effect */
+.btn_one:hover #web_name {
+  opacity: 0.7;
+}
+
+
+.sidebar_menu .btn_two i {
+  font-size: 25px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .sidebar_menu .menu {
-  position: absolute;
-  width: 100%;
-  top: 80px;
+  margin-top: 40px;
+  padding: 0 20px;
 }
 
 .sidebar_menu .menu li {
-  margin: 6px;
-  padding: 15px 20px;
+  list-style: none;
+  margin: 6px 0;
+  padding: 15px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease-in-out;
 }
 
-.sidebar_menu .menu i, a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
+.sidebar_menu .menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
+.sidebar_menu .menu i, 
+.sidebar_menu .menu a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .sidebar_menu .social_media {
-  color: white;
   position: absolute;
-  bottom: 50px;
-  left: 25%;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
 }
 
-.sidebar_menu .social_media i {
+.sidebar_menu .social_media a {
+  margin: 0 10px;
+  font-size: 20px;
   color: white;
   opacity: 0.5;
-  padding: 0 5px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar_menu .social_media a:hover {
+  opacity: 1;
 }
 
 #check {
   display: none;
-}
-
-.sidebar_menu .menu li:hover {
-  box-shadow: 0 0 4px rgba(255,255, 255, 0.5);
-}
-
-.btn_one i:hover {
-  font-size: 30px;
-}
-
-.btn_two i:hover {
-  font-size: 30px;
-}
-
-.sidebar_menu .social_media i:hover {
-  opacity: 1;
-  transform: scale(1.5);
 }
 
 #check:checked ~ .sidebar_menu {
@@ -125,4 +156,27 @@
 
 #check:checked ~ .sidebar_menu .btn_two i {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .sidebar_menu {
+    width: 250px;
+    left: -250px;
+  }
+
+  .btn_one {
+    font-size: 22px;
+  }
+
+  .sidebar_menu .menu li {
+    font-size: 14px;
+  }
+
+  .sidebar_menu .logo {
+    font-size: 20px;
+  }
+
+  .sidebar_menu .social_media a {
+    font-size: 18px;
+  }
 }
